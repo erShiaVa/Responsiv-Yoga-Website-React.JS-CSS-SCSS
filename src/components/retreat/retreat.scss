@@ -1,0 +1,35 @@
+.retreat{
+    margin: 4rem;
+}
+
+.retreat__container{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.retreat__img{
+    width: 28vw;
+    height: 28vw;
+    object-fit: cover;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1000px;
+    box-shadow: 0 0.3rem 2rem rgba(51, 51, 51, 0.10);
+}
+
+.retreat__heading{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+.retreat__paragraph{
+    margin-bottom: 1rem;
+
+    &.one{
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+}

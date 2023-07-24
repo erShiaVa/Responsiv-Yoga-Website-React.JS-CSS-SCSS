@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+button{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 0.1rem solid var(--light-beige);
+  border-radius: 0.5rem;
+  color: var(--light-beige);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    max-width: 15rem;
+    padding: 1rem 2rem;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom:  1px solid var(--dark-green);
+    background: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-green);
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100%;
+  }

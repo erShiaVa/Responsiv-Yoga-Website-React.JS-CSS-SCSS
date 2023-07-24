@@ -1,0 +1,31 @@
+@use "sass:color";
+@use "sass:math";
+
+:root {
+    --light-grey: hsl(0, 0%, 98%);
+    --dark-green: #0C2925;
+    --light-green: rgba(23, 72, 65, 0.85);
+    --light-beige: #F8F4EF;
+}
+
+/** 1200px oder schmaler */
+$breakpoint-lg: 75em!default;
+
+
+/** 992px oder schmaler */
+$breakpoint-md: 62em!default;
+
+
+/** 768px oder schmaler */
+$breakpoint-sm: 48em!default;
+
+
+/** 576px oder schmaler */
+$breakpoint-xs: 36em!default;
+
+
+/** Breakpoints */
+@media (max-width: $breakpoint-lg) {}
+@media (max-width: $breakpoint-md) {}
+@media (max-width: $breakpoint-sm) {}
+@media (max-width: $breakpoint-xs) {}

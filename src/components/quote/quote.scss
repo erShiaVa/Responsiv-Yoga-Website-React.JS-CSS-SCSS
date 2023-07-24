@@ -1,0 +1,45 @@
+.quote__container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.quote__row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.quote__text{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-style: italic;
+}
+
+span{
+    padding: 0.5rem 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+
+    @media (max-width: 767px){
+        font-size: 0.6rem;
+    }
+}
+
+.quote__row img{
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    object-fit: cover;
+    -webkit-mask-image: url("../../images/shape.png");
+    mask-image: url("../../images/shape.png");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
