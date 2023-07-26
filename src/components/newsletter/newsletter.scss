@@ -1,0 +1,40 @@
+.newsletter{
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 2rem rgba(51, 51, 51, 0.10);
+
+    @media (max-width: 1200px){
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+.newsletter__subtitle{
+    padding: 1rem 0;
+}
+
+.newsletter__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.newsletter__input input{
+    width: 25rem;
+    padding: 1rem 2rem;
+    border: 0.1rem solid var(--light-green);
+    border-radius: 0.5rem;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+}
+
+.newsletter__button{
+    background-color: var(--light-green);
+}

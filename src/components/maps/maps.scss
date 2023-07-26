@@ -1,8 +1,11 @@
 .maps{
-    width: 100%;
+    width: 80rem;
     height: 17.5rem;
     filter: sepia(0.4) contrast(1.2) brightness(0.9);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 776px){
         height: 12.5rem;

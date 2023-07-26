@@ -12,6 +12,7 @@ function Hero() {
               <p className="hero__heading-sub">Be your own master and balance your life</p>
           </div>
       </div>
+      
     </div>
   )
 }

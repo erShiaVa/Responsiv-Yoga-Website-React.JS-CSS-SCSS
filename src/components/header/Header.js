@@ -1,33 +1,41 @@
 import React, { useState } from 'react';
-import "./header.scss";
-import { AiOutlineMenu } from "react-icons/ai";
+import './header.scss';
+import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 
 function Header() {
-  const [open, setOpen] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setOpen(!open);
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setNavOpen(!navOpen);
+    if (!navOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'scroll';
+    }
   };
+
   return (
-    <div>
-      <header className='header'>
-        <nav className='navbar container'>
-          <div className="logo">
-            <h1>LOGO.</h1>
-          </div>
-          <ul className={open ? `nav-items active` : `nav-items`}>
-            <li>Home</li>
-            <li>Classes</li>
-            <li>Retreat</li>
-            <li>Contact</li>
-          </ul>
-          <div className="hamburger">
-            <AiOutlineMenu onClick={handleClick}/>    {/* src={images.hamburger} alt="#" */}
-          </div>
-        </nav>
-      </header>
+    <div className='header__nav'>
+      <h1 className='header__logo'>Yoga.</h1>
+      {navOpen ? (
+        <HiOutlineX 
+            className='header__icon'
+            onClick={handleNavToggle} size={25} />
+      ) : (
+        <HiOutlineMenuAlt3 
+            className='header__icon'
+            onClick={handleNavToggle} size={25} />
+      )}
+      <div className={`header__items ${navOpen ? 'header__items--active' : 'header__items--hidden'}`}>
+        <ul>
+          <li className='header__item'>Home</li>
+          <li className='header__item'>Classes</li>
+          <li className='header__item'>Retreat</li>
+          <li className='header__item'>Booking</li>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
